@@ -341,7 +341,8 @@ h6,
   width: 320px;
   min-height: 100px;
   margin-top: 50px;
-  border: 1px solid #666;
+  border-radius: 10px;
+  border: 2px solid #06a3da;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: 20px 30px;
@@ -355,27 +356,31 @@ h6,
   margin: 0;
   font-size: 20px;
   border: none;
-  font-family: sans-serif;
+  font-family: cursive;
   text-align: center;
   background-color: #3073bb;
   color: #fff;
-  padding: 2px;
+  padding: 5px 2px;
+  border-radius: 8px 8px 0 0;
 }
 
 #alertBox p {
   font-size: 14px;
   text-align: center;
   padding: 15px 10px;
+  color: rgb(36, 35, 35);
+  font-family: sans-serif;
 }
 
 #alertBox #closeBtn {
   display: block;
   position: relative;
   margin: 5px auto;
-  padding: 7px;
-  border: 0 none;
+  padding: 3px 10px;
+  border: 2px solid red;
+  outline: none;
   width: 70px;
-  font: 0.7em verdana, arial;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
