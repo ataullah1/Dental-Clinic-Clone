@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #091e3e;
+        font-family: cursive;
+        padding: 0 5%;
+      }
+
+      .congratulations-container {
+        background-color: #06a3da;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        animation: slideIn 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <title>appointment submitted</title>
+  </head>
+  <body>
+    <div class="congratulations-container">
+      <h1>
+        Your appointment has been submitted. <br /><br>
+        Smile Dental Care will call you.
+      </h1>
+      <!-- Add additional content or styling as needed -->
+    </div>
+  </body>
+</html>

@@ -83,7 +83,7 @@
             <div class="me-3 pe-3 border-end py-2">
               <p class="m-0">
                 <i class="fa fa-envelope-open me-2"></i
-                >smiledentalcare@gmail.com
+                >info.smiledentalbd@gmail.com
               </p>
             </div>
             <div class="py-2">
@@ -441,46 +441,109 @@
               data-wow-delay="0.6s"
             >
               <h1 class="text-white mb-4">Make Appointment</h1>
-              <form>
+
+              <!--  Form Start -->
+
+              <!-- Form Submission confirm page JS Start -->
+
+              <script type="text/javascript">
+                var submitted = false;
+              </script>
+              <iframe
+                name="hiddenConfirm"
+                id="hiddenConfirm"
+                style="display: none"
+                onload="if(submitted){window.location='form_submit.html';}"
+              ></iframe>
+
+              <!-- Form Submission confirm page end -->
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeduC4WsYI10qFdyAZeT3HAiTPEGJgIGF-zl4iuaojzK48iLA/formResponse"
+                method="post"
+                target="hiddenConfirm"
+                onsubmit="submitted=true"
+              >
                 <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <select
-                      class="form-select bg-light border-0"
-                      style="height: 55px"
-                    >
-                      <option selected>Select A Service</option>
-                      <option value="1">Teeth Whitening</option>
-                      <option value="2">Dental Bridges</option>
-                      <option value="3">Root Cannel</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <select
-                      class="form-select bg-light border-0"
-                      style="height: 55px"
-                    >
-                      <option selected>Select Doctor</option>
-                      <option value="1">DT. Ismail Hosen</option>
-                      <option value="2">DT. Rafiul</option>
-                      <option value="3">DT. Rifat Hosen</option>
-                    </select>
-                  </div>
+                  <!-- Name  -->
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
+                      name="entry.280660104"
                       class="form-control bg-light border-0"
                       placeholder="Your Name"
                       style="height: 55px"
+                      required
                     />
                   </div>
+                  <!-- Phone Number  -->
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="number"
+                      name="entry.1022586639"
+                      class="form-control bg-light border-0"
+                      placeholder="Phone Number"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <!-- Email  -->
                   <div class="col-12 col-sm-6">
                     <input
                       type="email"
+                      name="entry.1129914830"
                       class="form-control bg-light border-0"
                       placeholder="Your Email"
                       style="height: 55px"
                     />
                   </div>
+
+                  <!-- Select Our Branches   -->
+                  <div class="col-12 col-sm-6">
+                    <select
+                      name="entry.474696721"
+                      class="form-select bg-light border-0"
+                      style="height: 55px"
+                      required
+                      pl
+                    >
+                      <!-- <option>Select Branches</option> -->
+                      <option value="Select Branches">Select Branches</option>
+                      <option value="Barishal">Barishal</option>
+                      <option value="Dawatala">Dawatala</option>
+                    </select>
+                  </div>
+                  <!-- Service   -->
+                  <div class="col-12 col-sm-6">
+                    <select
+                      name="entry.978416586"
+                      class="form-select bg-light border-0"
+                      style="height: 55px"
+                    >
+                      <!-- <option >Select A Service</option> -->
+                      <option value="Select A Service">Select A Service</option>
+                      <option value="Teeth Whitening">Teeth Whitening</option>
+                      <option value="Dental Bridges">Dental Bridges</option>
+                      <option value="Root Cannel">Root Cannel</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+
+                  <!-- Dr  -->
+                  <div class="col-12 col-sm-6">
+                    <select
+                      class="form-select bg-light border-0"
+                      style="height: 55px"
+                      name="entry.2136353030"
+                    >
+                      <!-- <option>Select Doctor</option> -->
+                      <option value="Select Doctor">Select Doctor</option>
+                      <option value="DT. Ismail Hosen">DT. Ismail Hosen</option>
+                      <option value="DT. Rafiul Islam">DT. Rafiul Islam</option>
+                      <option value="DT. Rifat Hosen">DT. Rifat Hosen</option>
+                    </select>
+                  </div>
+
+                  <!-- Date  -->
                   <div class="col-12 col-sm-6">
                     <div class="date" id="date1" data-target-input="nearest">
                       <input
@@ -490,9 +553,13 @@
                         data-target="#date1"
                         data-toggle="datetimepicker"
                         style="height: 55px"
+                        required
+                        name="entry.870983117"
                       />
                     </div>
                   </div>
+
+                  <!-- Time  -->
                   <div class="col-12 col-sm-6">
                     <div class="time" id="time1" data-target-input="nearest">
                       <input
@@ -502,14 +569,19 @@
                         data-target="#time1"
                         data-toggle="datetimepicker"
                         style="height: 55px"
+                        name="entry.1548636152"
                       />
                     </div>
                   </div>
+                  <!-- Form submission button -->
                   <div class="col-12">
-                    <button class="btn btn-dark w-100 py-3" type="submit">
-                      Make Appointment
-                    </button>
+                    <input
+                      class="btn btn-dark w-100 py-3"
+                      type="submit"
+                      value="Make Appointment"
+                    />
                   </div>
+                  <!-- Form Input End -->
                 </div>
               </form>
             </div>
@@ -1062,7 +1134,7 @@
               <div class="position-relative rounded-top" style="z-index: 1">
                 <img
                   class="img-fluid rounded-top w-100"
-                  src="./img/dt/5.jpg"
+                  src="./img/dt/muslima.jpg"
                   alt=""
                 />
                 <div
@@ -1183,7 +1255,7 @@
             </p>
             <p class="mb-2">
               <i class="bi bi-envelope-open text-primary me-2"></i
-              >smiledentalcare@gmail.com
+              >info.smiledentalbd@gmail.com
             </p>
             <p class="mb-0">
               <i class="bi bi-telephone text-primary me-2"></i>+880 1401 532018
@@ -1229,6 +1301,16 @@
       <div class="container">
         <div class="row g-0">
           <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              Developed by
+              <a
+                class="text-white border-bottom"
+                href="https://www.facebook.com/ataullah0"
+                >Md Ataullah</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
             <p class="mb-md-0">
               &copy;
               <a
@@ -1238,16 +1320,7 @@
               >. All Rights Reserved.
             </p>
           </div>
-          <div class="col-md-6 text-center text-md-end">
-            <p class="mb-0">
-              Designed and Developed by
-              <a
-                class="text-white border-bottom"
-                href="https://www.facebook.com/ataullah0"
-                >Md Ataullah</a
-              >
-            </p>
-          </div>
+        
         </div>
       </div>
     </div>
